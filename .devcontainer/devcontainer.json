@@ -1,0 +1,16 @@
+{
+  "name": "Cube.js with Splitgraph",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "cube",
+  "workspaceFolder": "/workspace",
+  "remoteEnv": {
+    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-azuretools.vscode-docker"
+  ],
+  "forwardPorts": [3000, 4000, 5432],
+}
